@@ -72,7 +72,7 @@ void DynArray::remove(int index){
     for(int i=index;i<lastIndex;i++)
         arr[i]=arr[i+1];        
     lastIndex--;
-    if(lastIndex+1==(capacity/2))
+    if(lastIndex+1<=(capacity/2))
         shrinkArray();
     }
 
